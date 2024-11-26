@@ -1,66 +1,44 @@
-## Foundry
+# Ethernaut Solutions
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains the solutions for the [Ethernaut](https://ethernaut.openzeppelin.com/) challenges.
 
-Foundry consists of:
+## Requirements
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git): Run `git --version` to check the existing installation.
+- [Foundry](https://getfoundry.sh/): Run `forge --version` to check the existing installation.
 
-## Documentation
+## Setup
 
-https://book.getfoundry.sh/
+To clone the repository and install the dependencies, run:
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```bash
+git clone https://github.com/blocktivist/ethernaut-solutions
+cd ethernaut-solutions
+forge install OpenZeppelin/openzeppelin-contracts@v4.9.6
+forge install foundry-rs/forge-std
+forge build
 ```
 
-### Test
+## Instructions
 
-```shell
-$ forge test
+To add a Sepolia RPC URL, run:
+
+```bash
+cp .env.example .env
+# Add Sepolia RPC URL
+source .env
 ```
 
-### Format
+To add a private key, run:
 
-```shell
-$ forge fmt
+```bash
+cast wallet import sepoliaKey --interactive
 ```
 
-### Gas Snapshots
+For each challenge, deploy a new instance through the browser using the `sepoliaKey`.
 
-```shell
-$ forge snapshot
-```
+To fetch the `instanceAddress` from the console, run:
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+contract.address
 ```

@@ -14,8 +14,8 @@ To clone the repository and install the dependencies, run:
 ```bash
 git clone https://github.com/blocktivist/ethernaut-solutions
 cd ethernaut-solutions
-forge install OpenZeppelin/openzeppelin-contracts@v4.9.6
 forge install foundry-rs/forge-std
+forge install OpenZeppelin/openzeppelin-contracts@v4.9.6
 forge build
 ```
 
@@ -37,8 +37,8 @@ cast wallet import sepoliaKey --interactive
 
 For each challenge, deploy a new instance through the browser using the `sepoliaKey`.
 
-To fetch the `instanceAddress` from the console, run:
+To fetch the `instanceAddress`, open the browser's developer console and run:
 
-```bash
+```javascript
 contract.address
 ```

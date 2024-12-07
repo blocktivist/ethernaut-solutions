@@ -13,5 +13,5 @@ Deploy:
 
 ```bash
 forge create KingHack --broadcast --value <prize>wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
-# forge create KingHack --value 1000000000000000wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
+# forge create KingHack --broadcast --value 1000000000000000wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
 ```

@@ -42,3 +42,7 @@ To fetch the `instanceAddress`, open the browser's developer console and run:
 ```javascript
 contract.address
 ```
+
+## Credits
+
+Credits go to [@t4sk](https://github.com/t4sk) and their [YouTube series](https://www.youtube.com/playlist?list=PLO5VPQH6OWdWh5ehvlkFX-H3gRObKvSL6) for providing a guide on how to solve the challenges.

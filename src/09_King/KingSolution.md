@@ -12,6 +12,6 @@ cast to-dec 0x00000000000000000000000000000000000000000000000000038d7ea4c68000
 Deploy:
 
 ```bash
-forge create KingHack --value <prize>wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
+forge create KingHack --broadcast --value <prize>wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
 # forge create KingHack --value 1000000000000000wei --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
 ```

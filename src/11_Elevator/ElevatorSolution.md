@@ -3,7 +3,7 @@
 Deploy:
 
 ```bash
-forge create ElevatorHack --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
+forge create ElevatorHack --broadcast --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
 ```
 
 Run:

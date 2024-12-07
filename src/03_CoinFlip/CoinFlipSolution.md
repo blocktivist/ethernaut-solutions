@@ -3,7 +3,7 @@
 Deploy:
 
 ```bash
-forge create CoinFlipHack --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
+forge create CoinFlipHack --broadcast --rpc-url $SEPOLIA_RPC_URL --account sepoliaKey --constructor-args <instanceAddress>
 ```
 
 Run 10 times:
